@@ -89,8 +89,8 @@ body {
 
 .button-container {
     display: flex;
-    width: 300px;
-    justify-content: center;
+    gap: 10px; /* espacio entre botones */
+    justify-content: center; /* centra los botones horizontalmente */
 }
 
 /* Estilos de entrada de texto */
@@ -145,13 +145,12 @@ ul {
 
 /* Botón de sortear título */
 .button-draw {
-    display: inline-flex;
+    display: inline-flex; /* o flex */
     align-items: center;
-    width: 100%;
-    padding: 10px 40px;
-    color: var(--color-white);
-    background-color: var(--color-button);
-    font-size: 16px;
+    justify-content: center;
+    gap: 10px; /* espacio entre imagen y texto */
+    width: auto; /* que no tome 100% del ancho */
+    padding: 10px 20px;
 }
 
 .button-draw img {
