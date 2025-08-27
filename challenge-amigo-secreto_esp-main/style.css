@@ -162,3 +162,11 @@ ul {
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+
+.button-draw, .button-reset {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* espacio entre imagen y texto */
+    padding: 10px 20px;
+}
