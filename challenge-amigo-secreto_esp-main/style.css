@@ -145,19 +145,24 @@ ul {
 
 /* Botón de sortear título */
 .button-draw {
-    display: flex;          /* Para que imagen y texto estén en la misma línea */
-    align-items: center;    /* Centrar verticalmente la imagen y el texto */
-    justify-content: center;/* Centrar contenido dentro del botón */
+    display: inline-flex;       /* Flex para alinear imagen y texto */
+    align-items: center;        /* Centrar verticalmente */
+    justify-content: center;    /* Centrar horizontalmente */
+    gap: 10px;                  /* Espacio entre imagen y texto */
     padding: 10px 20px;
     font-size: 16px;
     background-color: var(--color-button);
     color: var(--color-white);
     border: 2px solid #000;
     border-radius: 25px;
+    white-space: nowrap;        /* Evita que el texto haga wrap */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
 .button-draw img {
-    margin-right: 10px;     /* Separación entre la imagen y el texto */
+    width: 24px;               /* Ajusta el tamaño de la imagen */
+    height: 24px;
 }
 
 .button-draw:hover {
