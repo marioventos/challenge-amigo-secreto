@@ -88,10 +88,11 @@ body {
 }
 
 .button-container {
-    width: 300px;
-    justify-content: center;
+    display: flex;          /* Para que los botones se alineen horizontalmente */
+    justify-content: center; /* Centrar los botones dentro del contenedor */
+    gap: 10px;              /* Espacio entre los botones */
+    width: 100%;
 }
-
 /* Estilos de entrada de texto */
 .input-title {
     flex: 1;
@@ -144,17 +145,24 @@ ul {
 
 /* Botón de sortear título */
 .button-draw {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: 10px 40px;
-    color: var(--color-white);
-    background-color: var(--color-button);
+    display: inline-flex;       /* Flex para alinear imagen y texto */
+    align-items: center;        /* Centrar verticalmente */
+    justify-content: center;    /* Centrar horizontalmente */
+    gap: 10px;                  /* Espacio entre imagen y texto */
+    padding: 10px 20px;
     font-size: 16px;
+    background-color: var(--color-button);
+    color: var(--color-white);
+    border: 2px solid #000;
+    border-radius: 25px;
+    white-space: nowrap;        /* Evita que el texto haga wrap */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
 .button-draw img {
-    margin-right: 40px;
+    width: 24px;               /* Ajusta el tamaño de la imagen */
+    height: 24px;
 }
 
 .button-draw:hover {
