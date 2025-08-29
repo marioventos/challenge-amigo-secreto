@@ -6,7 +6,7 @@
   <img src="challenge-amigo-secreto_esp-main/assets/amigo-secreto.png" alt="Imagen del juego" width="500">
 </p>
 
-  👉 [**Jugar ahora**]
+  👉 https://marioventos.github.io/challenge-amigo-secreto/ [**Jugar ahora**]
   
   Agrega nombres de tus amigos en la barra y **empieza a jugar**.
 
